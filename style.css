@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: 'Special Elite', monospace;
+}
+
+#experimento {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#identificacao {
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+#form-identificacao {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#resposta {
+    width: 100%;
+    padding: 14px;
+    background-color: transparent;
+    border: 1px solid #444444;
+    color: #FFFFFF;
+    font-family: inherit;
+    font-size: 1rem;
+    outline: none;
+}
+
+#resposta:focus {
+    border-color: #FFFFFF;
+}
+
+#resposta::placeholder {
+    color: #777777;
+}
+
+button {
+    padding: 12px;
+    background-color: transparent;
+    border: 1px solid #444444;
+    color: #FFFFFF;
+    font-family: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+button:hover {
+    border-color: #FFFFFF;
+}
+
+#mensagem {
+    margin-top: 30px;
+    min-height: 1.5em;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}

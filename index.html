@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" href="style.css">
+    <title>Quem é você?</title>
+</head>
+<body>
+    <main id="experimento">
+        <section id="identificacao" aria-labelledby="pergunta">
+            <h1 id="pergunta">Quem é você?</h1>
+
+            <form id="form-identificacao">
+                <label for="resposta" class="visually-hidden">
+                    Digite sua resposta
+                </label>
+
+                <input
+                    type="text"
+                    id="resposta"
+                    name="resposta"
+                    placeholder="Sua resposta..."
+                    autocomplete="off"
+                    required
+                >
+
+                <button type="submit">Responder</button>
+            </form>
+
+            <p id="mensagem" role="status" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <audio id="vento" loop preload="auto">
+        <source src="mus_f_wind2.ogg" type="audio/ogg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
